@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Distal | Keys that survive a broken chip</title>
+<meta name="description" content="Distal is an open applet and host library that lets secure elements from different vendors sign together. Each chip holds a share of the private key. The key never exists whole, not at setup, not at signing, not in your firmware.">
+<meta name="theme-color" content="#f65c3b">
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+<link rel="icon" type="image/svg+xml" sizes="any" href="/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#29232a">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="fonts/ArchivoBlack.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="canonical" href="https://distal.run/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Distal">
+<meta property="og:title" content="Distal | Keys that survive a broken chip">
+<meta property="og:description" content="An open applet and host library that lets secure elements from different vendors sign together, so the private key never exists whole.">
+<meta property="og:url" content="https://distal.run/">
+<meta property="og:image" content="https://distal.run/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Distal angular d symbol and wordmark with the line One chip breaks. Your keys don’t.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Distal | Keys that survive a broken chip">
+<meta name="twitter:description" content="An open applet and host library that lets secure elements from different vendors sign together, so the private key never exists whole.">
+<meta name="twitter:image" content="https://distal.run/og.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="banner">
+  <div class="site-header">
+    <a class="brand-wordmark" href="/" aria-label="Distal home"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 84 634 196"><path transform="translate(0 86) scale(0.6031746)" fill="currentColor" fill-rule="evenodd" d="M235 0V254L171 315H54L0 264V189L97 115H165V55Z M61 177H165V252H61Z"/><path transform="translate(-292 0)" fill="currentColor" fill-rule="evenodd" d="M463 86H492V117H463Z M463 140H492V276H463Z M623 181H596C593 169 584 164 569 164C553 164 542 170 542 181C542 191 550 196 571 200L588 203C614 208 626 222 626 242C626 265 605 278 572 278C539 278 516 263 513 238H542C544 250 554 254 572 254C589 254 599 249 599 240C599 230 590 226 572 223L552 219C526 214 513 202 513 181C513 155 536 138 568 138C598 138 620 154 623 181Z M661 99H690V140H720V168H690V238C690 245 693 248 701 248H720V276H700C674 276 661 264 661 239V168H638V140H661Z M844 140H872V276H844V259C833 271 818 277 801 277C761 277 733 248 733 208C733 168 762 139 802 139C819 139 834 145 844 157Z M844 208C844 185.08 825.42 166.5 802.5 166.5C779.58 166.5 761 185.08 761 208C761 230.92 779.58 249.5 802.5 249.5C825.42 249.5 844 230.92 844 208Z M897 86H926V276H897Z"/></svg></a>
+    <nav aria-label="Main">
+      <a class="nav-page" href="#how">How it works</a>
+      <a class="nav-page" href="#recovery">Recovery</a>
+      <a class="nav-page" href="#roadmap">Roadmap</a>
+      <a class="nav-cta" href="mailto:hello@distal.run?subject=Discuss%20my%20device"><span class="cta-long">Talk to us</span><span class="cta-short">Talk to us</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+<section class="poster-hero" aria-labelledby="hero-title">
+  <p class="eyebrow">THRESHOLD SIGNING / FOR ANYTHING THAT SIGNS</p>
+  <div class="poster-stage">
+    <div>
+      <h1 id="hero-title" aria-label="One chip breaks. Your keys don’t."><span>ONE CHIP</span><br> <span>BREAKS.</span><br> <span class="hero-emphasis">YOUR KEYS</span><br> <span class="hero-emphasis">DON’T.</span></h1>
+      <p class="hero-description">Distal keeps the signing keys inside your product safe when a secure chip is attacked, backdoored or cut off from supply. For teams that build wallets, devices, firmware pipelines and anything else that signs, so that no single chip is the single point of failure.</p>
+      <div class="hero-actions">
+        <a class="action" href="#how">See how it works</a>
+        <a class="hero-secondary" href="mailto:hello@distal.run?subject=Discuss%20my%20device">Talk to us</a>
+      </div>
+      <p class="hero-delivery">FROST threshold Schnorr (RFC 9591) · standard signatures any verifier accepts · open applet for JavaCard secure elements · open host library</p>
+    </div>
+    <figure class="poster-art" data-earthrise><div class="earthrise-frame"><img class="earthrise-poster" src="earthrise-poster.png" width="1200" height="600" alt="Earth rising above a cratered lunar horizon, drawn in coloured characters." fetchpriority="high"><canvas width="1200" height="600" aria-hidden="true"></canvas></div></figure>
+  </div>
+</section>
+
+<section class="poster-idea" aria-labelledby="idea-title">
+  <div class="wrap">
+    <p class="kicker">The problem</p>
+    <h2 id="idea-title">Three ways one chip fails you.</h2>
+    <p class="lede">A secure element is trusted on three things at once. Its silicon resists physical attack. Its vendor has no backdoor. Its supply chain delivered the genuine part. If any one of those fails, every device that relies on that chip alone fails with it.</p>
+    <div class="failures">
+      <div class="failure"><h3>Physical attack</h3><p>In 2026, Ledger’s Donjon team used laser fault injection to run their own firmware on a TROPIC01 secure element. Certification measures resistance to the attacks a lab knows today.</p></div>
+      <div class="failure"><h3>Opaque vendors</h3><p>Closed secure elements are evaluated under NDA. Trezor reports finding a widely used chip below its standards in 2019 and being barred from saying why.</p></div>
+      <div class="failure"><h3>Sovereignty and supply</h3><p>Buyers increasingly ask whether a chip from one country can anchor critical infrastructure, and export controls can cut supply at short notice.</p></div>
+    </div>
+    <p class="source">Layering contained the TROPIC01 break: unlocking still depended on a second secure element, the microcontroller and the PIN. Distal applies the same idea to signing itself. Sources: <a href="https://donjon.ledger.com/blog/tropic01-laser-fault-injection/">Ledger Donjon</a>, <a href="https://trezor.io/learn/security-privacy/how-trezor-keeps-you-safe/tropic-01-chip-vulnerability-disclosure-what-happened">Trezor</a>.</p>
+  </div>
+</section>
+
+<section class="poster-flow" id="how" aria-labelledby="how-title">
+  <div class="wrap">
+    <p class="kicker">How one signature happens</p>
+    <h2 id="how-title">Chips sign. The host only combines.</h2>
+    <ol class="flow">
+      <li><div class="node"><b>Something to sign</b><span>A payment, a firmware image, a certificate. Your device decides what gets signed.</span></div></li>
+      <li><div class="stack">
+        <div class="node chip"><b>Secure element A</b><span>Vendor one. Holds share 1. Computes a partial signature.</span></div>
+        <div class="node chip"><b>Secure element B</b><span>Vendor two. Holds share 2. Computes a partial signature.</span></div>
+      </div></li>
+      <li><div class="node"><b>Your firmware combines</b><span>It sees partial signatures only. There is no key in its memory to steal.</span></div></li>
+      <li><div class="node out"><b>One signature</b><span>A standard Schnorr signature. Verifiers cannot tell it came from two chips.</span></div></li>
+    </ol>
+
+    <ul class="benefits">
+      <li><h3>No whole key, ever</h3><p>Shares are created on the chips themselves. At setup, at signing and at recovery the full key never sits in one place, so there is nothing for malware or a probe on your microcontroller to read.</p></li>
+      <li><h3>Chips that check each other</h3><p>PIN-retry limits stay in agreement across the chips, and every signature uses randomness committed by a peer, so a backdoored chip cannot leak its share slowly. This part is new cryptography: the specification is published and externally reviewed before it ships.</p></li>
+      <li id="recovery"><h3>Recovery, 2 of 4</h3><p>Two shares live in the device on chips from two vendors. Two sit on offline cards kept apart. Any two sign. A chip dies: the rest make a new share. Device lost: the cards sign. Device stolen: the cards move everything to a new key.</p></li>
+      <li><h3>Ordinary signatures out</h3><p>FROST threshold Schnorr (RFC 9591) produces standard signatures. Nothing changes for whoever verifies them. The first curve is secp256k1, the one Bitcoin Taproot uses.</p></li>
+    </ul>
+    <p class="flow-note">A compromised host can still ask the chips to sign something you did not intend. Distal protects the key, not the decision to use it. Pair it with a trusted display or on-chip policy.</p>
+  </div>
+</section>
+
+<section class="poster-trust" aria-labelledby="trust-title">
+  <div class="wrap">
+    <p class="kicker">Why you can rely on it</p>
+    <h2 id="trust-title">Our code is the new single point of trust.</h2>
+    <p class="lede">A vendor’s certificate covers its chip and operating system, not our applet. If one applet runs on both chips, one bug could touch both. Vendor diversity protects against silicon and vendor failure, not against our own mistakes, so we treat the applet as the thing to scrutinize.</p>
+    <div class="trust">
+      <div><h3>Open source</h3><p>The applet for JavaCard chips such as NXP JCOP and Infineon SECORA, the host library and the specification are public. Anyone can read what runs on the chips.</p></div>
+      <div><h3>Reproducible builds</h3><p>You can rebuild the applet from source and check that it matches what gets installed.</p></div>
+      <div><h3>Side channels and audit</h3><p>The applet gets its own side-channel evaluation and an external audit before it goes into a customer device.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="poster-vision" id="roadmap" aria-labelledby="vision-title">
+  <div class="wrap">
+    <p class="kicker">Why “distal”</p>
+    <h2 id="vision-title">Farther from the center.</h2>
+    <p class="lede">Signing belongs inside the device, at the edge of the system, not in a server or in a single trusted chip. Distal is the companion secure element that signs with another chip while each keeps its own share.</p>
+    <ol class="road">
+      <li><span class="when">First proof</span><h3>Taproot on two Java Cards</h3><p>Use development cards from two vendors and a host library to test signing and recovery. The goal is one signature Bitcoin can verify.</p></li>
+      <li><span class="when">In parallel</span><h3>Prototype the companion chip</h3><p>Build one signing participant on an FPGA and test it with a compatible card to see what custom hardware can improve.</p></li>
+      <li><span class="when">First paid pilot</span><h3>Integrate with a wallet maker</h3><p>Choose the pilot hardware around the buyer’s signing, recovery, and security requirements. Build a companion ASIC if customer designs justify it.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="poster-contact" aria-labelledby="contact-title">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="kicker">Work with us</p>
+      <h2 id="contact-title">Building something that holds keys?</h2>
+    </div>
+    <div>
+      <p>Tell us about your device, the chips you use today and what you need to survive. We will tell you honestly whether Distal fits.</p>
+      <a class="action" href="mailto:hello@distal.run?subject=Discuss%20my%20device">hello@distal.run</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div class="footer-wrap">
+  <footer class="footer">
+    <a class="brand-wordmark" href="/" aria-label="Distal home"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 84 634 196"><path transform="translate(0 86) scale(0.6031746)" fill="currentColor" fill-rule="evenodd" d="M235 0V254L171 315H54L0 264V189L97 115H165V55Z M61 177H165V252H61Z"/><path transform="translate(-292 0)" fill="currentColor" fill-rule="evenodd" d="M463 86H492V117H463Z M463 140H492V276H463Z M623 181H596C593 169 584 164 569 164C553 164 542 170 542 181C542 191 550 196 571 200L588 203C614 208 626 222 626 242C626 265 605 278 572 278C539 278 516 263 513 238H542C544 250 554 254 572 254C589 254 599 249 599 240C599 230 590 226 572 223L552 219C526 214 513 202 513 181C513 155 536 138 568 138C598 138 620 154 623 181Z M661 99H690V140H720V168H690V238C690 245 693 248 701 248H720V276H700C674 276 661 264 661 239V168H638V140H661Z M844 140H872V276H844V259C833 271 818 277 801 277C761 277 733 248 733 208C733 168 762 139 802 139C819 139 834 145 844 157Z M844 208C844 185.08 825.42 166.5 802.5 166.5C779.58 166.5 761 185.08 761 208C761 230.92 779.58 249.5 802.5 249.5C825.42 249.5 844 230.92 844 208Z M897 86H926V276H897Z"/></svg></a>
+    <span>© 2026 Distal · <a href="mailto:hello@distal.run">hello@distal.run</a></span>
+  </footer>
+</div>
+<script type="module" src="earthrise.js"></script>
+</body>
+</html>
